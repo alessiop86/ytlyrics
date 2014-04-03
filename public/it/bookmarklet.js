@@ -3,20 +3,19 @@ localpath = 'https://yt-lyrics.appspot.com/';
 /*localpath = 'http://localhost:8080/';*/
 
 var language_pack = {
-    'localpath': localpath + 'en/',
-    'iemessage': "YTLyrics is not compatible with Internet Explorer < 9.0. Please update your browser.",
-    'reportbug': 'Report a bug',
-    'suggestions': 'Suggerimenti',
-    'credits': 'Credits',
-    'loading': ' Loading ',
-    'searchlyrics': 'Search lyrics',
-    'artist': 'Artist',
-    'song': 'Song',
-    'nolyricsfound1': ' No lyrics found for: "',
-    'nolyricsfound2': '" (song title) and "',
-    'nolyricsfound3': ' "(artist). ',
-    'modifysearch': 'You can modify the research if the detected artist or the song name are wrong:<br/>'
-
+    'localpath': localpath,
+    'iemessage': "YTLyrics non funziona con versioni di Internet Explorer precedenti alla 9.0. Per favore, aggiorna il tuo browser.",
+    'suggestions' : 'Suggerimenti',
+    'reportbug': 'Segnala un bug',
+    'credits' : 'Info',
+    'loading' : ' Caricamento in corso ',
+    'searchlyrics' : 'Ricerca testo',
+    'artist' : 'Artista',
+    'song' : 'Canzone',
+    'nolyricsfound1' : ' Nessun testo trovato per: "',
+    'nolyricsfound2': '" (titolo canzone) e "',
+    'nolyricsfound3' : ' "(artista). ',
+    'modifysearch' : "Puoi modificare la ricerca se l'artista o il nome della canzone individuati sono sbagliati:<br/>"
 
 
 };
@@ -129,13 +128,14 @@ function ytLyricsFetchContent() {
         $("#bookmarklet_yt2_container").show();
 
         var url_site = document.baseURI;
+		
 		if (url_site === undefined)
 		{
 			var a = document.createElement("a");
 			a.setAttribute("href", "./");
 			url_site =  a.href;
 		}
-		
+
 		
         var stringa_title = document.title;
 
