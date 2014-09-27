@@ -1,7 +1,7 @@
-ytlyrics
+ytlyrics --- https://yt-lyrics.appspot.com/
 ========
 
-YT-Lyrics bookmarklet
+YT-Lyrics bookmarklet --- https://yt-lyrics.appspot.com/
 
 Second version of the YTLyrics bookmarklet.
 
